@@ -1,0 +1,37 @@
+<style>
+#table {
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 0;
+}
+td{
+	width :20px;
+	height:20px;
+}
+td.X{
+	background-color:black;
+}
+svg{
+	position:absolute;
+	width:500px;
+	height:500px;
+	top:30px;
+	left:600px;
+}
+rect{
+cursor: pointer;
+}
+rect.X{
+	background-color:grey;
+}
+
+</style>
+<body>
+game of life v.0.0.2 <input type="button" value="NEXT"/> <span id="count"></span>
+<div id='table'>table</div>
+<div id='svg'>svg</div>
+</body>
+<script src="./index.js"></script>
